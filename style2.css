@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Big Shoulders", sans-serif;
+    color: aliceblue;
+    height: 500px;
+}
+
+
+.navbar {
+    background-color: #A33409;
+    overflow: hidden;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar a {
+    color: black;
+    padding: 14px 64px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #832804;
+    transition: 0,000006ms;
+  }
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ou ajuste conforme necessário */
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .video-blur{
+object-fit: contain;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+
+}
+
+.banner .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5em;
+    color: white;
+}
+
+.banner .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: white;
+}
