@@ -1,83 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style2.css">
-    <title>Johan Pertile Tattoo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Johan Pertile Tattoo</title>
 </head>
-
 <body>
 
-    <header>
-        <div class="navbar">
-            <a href="#home">HOME</a>
-            <a href="#sobre">SOBRE</a>
-            <a href="#portfolio">PORTFÓLIO</a>
-            <a href="#orcamentos">ORÇAMENTOS</a>
-            <a href="#enderecos">ENDEREÇOS</a>
-        </div>
+  <header>
+    <div class="navbar">
+      <a href="#home">HOME</a>
+      <a href="#sobre">SOBRE</a>
+      <a href="#portfolio">PORTFÓLIO</a>
+      <a href="#orcamentos">ORÇAMENTOS</a>
+      <a href="#enderecos">ENDEREÇOS</a>
+    </div>
 
-        <div class="banner">
-            <video autoplay loop muted>
-                <source src="/video/coverr-tattooed-hand-with-a-ring-and-a-tablet-2017-1080p.mp4" type="video/mp4">
+    <div class="banner" id="home">
+      <video autoplay loop muted>
+        <source src="/video/coverr-tattooed-hand-with-a-ring-and-a-tablet-2017-1080p.mp4" type="video/mp4" />
+      </video>
+      <div class="video-blur"></div>
+      <div class="content">
+        <h1>Arte na pele, tradição no traço.</h1>
+        <p>"BOLD, ARTE, OLDSCHOOL E TRADIÇÃO!"</p>
+      </div>
+    </div>
+  </header>
 
-            </video>
-            <div class="video-blur">
-            </div>
+<section class="galeria" id="portfolio">
+  
+  <h2>Portfólio</h2>
 
-            <div class="content">
-                <h1>Arte na pele, tradição no traço.</h1>
+  <div class="grade-fotos">
+    <div class="linha-fotos">
+      <div class="foto-placeholder"><img src="/video/foto1.jpg" alt=""></div>
+      <div class="foto-placeholder"><img src="/video/foto2.webp" alt=""></div>
+      <div class="foto-placeholder"><img src="/video/foto3.jpg" alt=""></div>
+    </div>
 
-                <p>"BOLD, ARTE, OLDSCHOOL E TRADIÇÃO!"</p>
+    <div class="linha-fotos">
+      <div class="foto-placeholder"><img src="/video/foto4.jpg" alt=""></div>
+      <div class="foto-placeholder"><img src="/video/foto5.jpeg" alt=""></div>
+      <div class="foto-placeholder"><img src="/video/foto6.png" alt=""></div>
+    </div>
+  </div>
+</section>
 
-            </div>
-        </div>
-    </header>
+<section class="sobre" id="sobre">
+  <h2>Quem Sou Eu</h2>
+  <div class="descricao-sobre">
+    <div class="coluna">
+      <p>
+        Meu nome é Johan Pertile e a tatuagem entrou na minha vida como quem encontra um propósito — de forma intensa, natural e transformadora. Desde muito cedo, me encantei com o poder que a arte na pele tem de marcar histórias, sentimentos e fases da vida.
 
-    <main>
-        <ul class="orcamento">
-            <form class="form">
+Sempre fui fascinado pela estética do old school — aquele traço grosso, firme, com personalidade, carregado de simbologia e com uma presença impossível de ignorar. O bold, a clareza visual e o impacto direto me ensinaram que simplicidade também pode ser profunda.
+      </p>
+      <p>
+        Ao longo dos anos, fui me aprofundando em técnicas, estudando artistas que admiro e, principalmente, deixando que cada cliente me ensinasse algo novo. Porque tatuar é isso: uma troca. Uma conversa silenciosa entre confiança, expressão e identidade.
 
-                <li>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome">
-                </li>
+Não vejo meu trabalho como um simples ofício, mas como um ato de escuta e criação. Cada pessoa que senta na minha cadeira carrega um universo próprio. Meu papel é entender esse universo e transformá-lo em algo visual, autêntico e eterno.
+      </p>
+    </div>
+    <div class="coluna">
+      <p>
+       Meu estúdio é um espaço de liberdade, respeito e acolhimento. Aqui, cada traço é pensado com cuidado, cada projeto é único e feito com alma. Mesmo mantendo os pilares da tatuagem tradicional vivos, busco novas possibilidades dentro dessa linguagem, sempre respeitando a essência que me trouxe até aqui.
 
-                <li>
-                    <label for="tel">Telefone:</label>
-                    <input type="text" id="tel" name="telefone">
-                </li>
+Trabalho com dedicação real. Gosto de ouvir, de entender, de me conectar com quem chega até mim. Seja para uma tatuagem pequena ou um projeto mais complexo, minha entrega é a mesma: total, verdadeira e com amor à arte.
+      </p>
+      <p>
+       Se você procura autenticidade, estilo, tradição e um trabalho feito com técnica e coração, saiba que será muito bem-vindo. Vai ser um prazer transformar a sua ideia em arte — na pele e na memória.
 
-                <li>
-                    <label for="E-mail">E-mail:</label>
-                        <input type="text" id="mail" name="E-mail">
-                </li>
+No fim das contas, o que faço não é só tatuar: é contar histórias através da pele. E poucas coisas me movem tanto quanto isso.
+      </p>
+    </div>
+  </div>
+</section>
 
-                <li>
-                    <label for="tamanho">Tamanho:</label>
-                        <input type="text" id="tamanho" name="tamanho">
 
-                </li>
+  <main>
+    <form class="form" id="orcamentos">
+      <ul class="orcamento">
+        <li class="linha">
+          <div class="campo metade">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" />
+          </div>
+          <div class="campo metade">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+        </li>
 
-                <li>
-                    <label for="local">Local:</label>
-                        <input type="text" id="local" name="local">
+        <li class="linha">
+          <div class="campo um-terco">
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" />
+          </div>
+          <div class="campo um-terco">
+            <label for="tamanho">Tamanho:</label>
+            <input type="text" id="tamanho" name="tamanho" />
+          </div>
+          <div class="campo um-terco">
+            <label for="local">Local:</label>
+            <input type="text" id="local" name="local" />
+          </div>
+        </li>
 
-                </li>
+        <li class="linha">
+          <div class="campo full">
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao"></textarea>
+          </div>
+        </li>
 
-                <li>
-                    <label for="descrição">Descrição:</label>
-                        <input type="text" id="descrição" name="descrição">
+        <li class="linha linha-checkbox">
+          <div class="campo">
+            <label>
+              <input type="checkbox" name="promocoes" />
+              Quer receber promoções?
+            </label>
+          </div>
+          <div class="campo">
+            <button type="submit">Enviar</button>
+          </div>
+        </li>
+      </ul>
+    </form>
+  </main>
 
-                </li>
-                <button type="submit">Enviar</button>
-            </form>
-
-        </ul>
-    </main>
+  <footer>
+    <p>&copy; 2025 Johan Pertile Tattoo. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
-
 </html>
